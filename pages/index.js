@@ -29,9 +29,9 @@ export default function Home() {
       }
       let chainId = await ethereum.request({ method: "eth_chainId" });
       console.log("Connected to " + chainId);
-      const rinkebyChainId = "0x4";
-      if (chainId !== rinkebyChainId) {
-        console.log("Please connect to Rinkeby Test Network");
+      const mucahitChainId = "0x92de47";
+      if (chainId !== mucahitChainId) {
+        console.log("Please connect to Mucahit Test Network");
         setCorrectNetwork(false);
         return;
       } else {
